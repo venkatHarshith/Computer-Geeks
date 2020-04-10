@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cCode</title>
+    <link rel="stylesheet" href="../CSS/cCode.css">
+  </head>
+  <body>
+
+
+    <form class="prob" action="HomePage.html" method="post" enctype="text/plain">
+      <label class="lable"for=""><b>Factorial: </b></label><br>
+      <textarea class="textarea1" name=""rows="10" cols="75">#include <stdio.h>
+int main() {
+    int n, i;
+    unsigned long long fact = 1;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    // shows error if the user enters a negative integer
+    if (n < 0)
+        printf("Error! Factorial of a negative number doesn't exist.");
+    else {
+        for (i = 1; i <= n; ++i) {
+            fact *= i;
+        }
+        printf("Factorial of %d = %llu", n, fact);
+    }
+
+    return 0;
+}</textarea><br><br>
+      <label class="lable1 "for=""><b>Fibonacci Series: </b></label><br>
+      <textarea class="textarea2"name="" rows="10" cols="75">#include <stdio.h>
+int main() {
+    int i, n, t1 = 0, t2 = 1, nextTerm;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; ++i) {
+        printf("%d, ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+
+    return 0;
+}</textarea>
+      <label class="lable2 "for=""><b>Prime Numbers: </b></label><br>
+      <textarea class="textarea3" name="" rows="10" cols="75">#include <stdio.h>
+int main() {
+    int n, i, flag = 0;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    for (i = 2; i <= n / 2; ++i) {
+
+        // condition for non-prime
+        if (n % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+
+    if (n == 1) {
+        printf("1 is neither prime nor composite.");
+    }
+    else {
+        if (flag == 0)
+            printf("%d is a prime number.", n);
+        else
+            printf("%d is not a prime number.", n);
+    }
+
+    return 0;
+}</textarea>
+    </form>
+
+
+    <br>
+    <hr>
+    <br>
+    <h2 class="foot"><br> Harshith Gudladhana <br>Email: harshithvenkat8333@gmail.com</a> </h2>
+    <div class="top1">
+    <img class="img1 inl" src="../Images/Picture1f.png" alt="">
+    <h1 class="header inl"><a href="HomePage.html" class="tagbar">Computer Geeks</a></h1>
+    </div>
+  </body>
+</html>

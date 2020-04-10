@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="../CSS/codeLib.css">
+    <script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.querySelector(".list").value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+  </head>
+  <body>
+
+
+      <h1>Enter your choice...Which language's program you want to view??</h1>
+
+    <form class="select">
+      <div class="selectdiv">
+<select name="list" class="list" accesskey="target">
+    <option value='none' selected>Choose a Programming Language</option>
+    <option value="javaCode.html">Java</option>
+    <option value="pythonCode.html">python</option>
+    <option value="cCode.html">C</option>
+    <option value="cppCode.html">C++</option>
+</select>
+<input type=button class="list1" value="Go" onclick="goToNewPage()" />
+</div>
+</form>
+
+
+
+<br>
+<hr>
+<br>
+<h2 class="foot"><br> Harshith Gudladhana <br>Email: harshithvenkat8333@gmail.com</a> </h2>
+<div class="top1">
+<img class="img1 inl" src="../Images/Picture1f.png" alt="">
+<h1 class="header inl"><a href="HomePage.html" class="tagbar">Computer Geeks</a></h1>
+</div>
+  </body>
+</html>

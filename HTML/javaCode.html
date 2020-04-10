@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javaCode</title>
+    <link rel="stylesheet" href="../CSS/cCode.css">
+  </head>
+  <body>
+
+
+    <form class="prob" action="HomePage.html" method="post" enctype="text/plain">
+      <label class="lable"for=""><b>Factorial: </b></label><br>
+      <textarea class="textarea1" name=""rows="10" cols="75">public class Factorial {
+
+    public static void main(String[] args) {
+
+        int num = 10;
+        long factorial = 1;
+        for(int i = 1; i <= num; ++i)
+        {
+            // factorial = factorial * i;
+            factorial *= i;
+        }
+        System.out.printf("Factorial of %d = %d", num, factorial);
+    }
+}</textarea><br><br>
+      <label class="lable1 "for=""><b>Fibonacci Series: </b></label><br>
+      <textarea class="textarea2"name="" rows="10" cols="75">class FibonacciExample1{
+public static void main(String args[])
+{
+ int n1=0,n2=1,n3,i,count=10;
+ System.out.print(n1+" "+n2);//printing 0 and 1
+
+ for(i=2;i<=count;++i)//loop starts from 2 because 0 and 1 are already printed
+ {
+  n3=n1+n2;
+  System.out.print(" "+n3);
+  n1=n2;
+  n2=n3;
+ }
+
+}} </textarea>
+      <label class="lable2 "for=""><b>Prime Numbers: </b></label><br>
+      <textarea class="textarea3" name="" rows="10" cols="75">public class PrimeExample{
+ public static void main(String args[]){
+  int i,m=0,flag=0;
+  int n=3;//it is the number to be checked
+  m=n/2;
+  if(n==0||n==1){
+   System.out.println(n+" is not prime number");
+  }else{
+   for(i=2;i<=m;i++){
+    if(n%i==0){
+     System.out.println(n+" is not prime number");
+     flag=1;
+     break;
+    }
+   }
+   if(flag==0)  { System.out.println(n+" is prime number"); }
+  }//end of else
+}
+} </textarea>
+    </form>
+
+
+    <br>
+    <hr>
+    <br>
+    <h2 class="foot"><br> Harshith Gudladhana <br>Email: harshithvenkat8333@gmail.com</a> </h2>
+    <div class="top1">
+    <img class="img1 inl" src="../Images/Picture1f.png" alt="">
+    <h1 class="header inl"><a href="HomePage.html" class="tagbar">Computer Geeks</a></h1>
+    </div>
+  </body>
+</html>
